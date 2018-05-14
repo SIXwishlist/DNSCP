@@ -1,0 +1,1 @@
+{{ partial("partials/core/customers/tableDetail") }}

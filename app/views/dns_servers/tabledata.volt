@@ -1,0 +1,1 @@
+{{ partial("partials/dns/dns_servers/tabledata") }}

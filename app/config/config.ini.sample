@@ -1,0 +1,21 @@
+[database]
+host     = localhost
+username = dbuser
+password = dbpasswd
+dbname   = dbdnscp
+
+[application]
+baseUrl = http://www.server.org
+securitySalt = extremlySecure
+
+[mail]
+relayhost = mail.server.org
+rootalias = root@domain.org
+from = dnscp@domain.org
+
+[push]
+jwtsigningkey = ALPH4NUM3RiCSTRINGMIN128BIT
+
+[pdf]
+logo=/public/img/OpenVZ.png
+footer=My PDF Footer

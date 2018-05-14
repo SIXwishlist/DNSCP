@@ -1,0 +1,217 @@
+#pageWrapper {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+#sidebarWrapper {
+    left: 180px;
+    top: 59px;
+    bottom: 0px;
+    margin-left: -180px;
+    display: none;
+    border-radius: 0px;
+    padding: 0px;
+    line-height: 30px;
+    overflow: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    margin-bottom: 0px;
+}
+
+#sidebarWrapper::-webkit-scrollbar { 
+    display: none; 
+}
+
+.sidebar-nav {
+    width: 100%;
+}
+
+#menu-toggle {
+    height: 30px;
+    width: 35px;
+    padding: 5px 0px;
+    line-height: 18px;
+    font-size: 15px !important;
+    font-weight: normal;
+    border-width: 1px;
+    text-transform: none;
+    border-radius: 0px;
+} 
+
+#toggleWrapper {
+    padding-left: 10px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+}
+
+#sidebar-title {
+    margin-left: 42px;
+    font-weight: 700;
+}
+
+.navbar-right {
+    margin-right: 0px !important;
+}
+
+.headerNavText {
+    display: block;
+}
+
+#sidebarWrapper .sidebar-nav a {
+    font-size: 1.1em;
+    border-radius: 0px;
+}
+
+.large .sidebar-nav a {
+    font-size: 20px !important;
+}
+
+.navbar-brand {
+    left: 44px;
+    position: absolute;
+}
+
+@media(min-width:992px) {
+    #pageWrapper > nav.navbar {
+        height: 60px;
+    }
+    
+    #pageWrapper > .navbar > .navbar-wrapper {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+    
+    #pageWrapper {
+        padding-left: 240px;
+    }
+
+    #pageWrapper.toggled {
+        padding-left: 100px;
+    }
+
+    #sidebarWrapper {
+        display: block;
+        width: 240px;
+    }
+
+    #pageWrapper.toggled #sidebarWrapper {
+        width: 100px;
+        text-align: center;
+    }
+    
+    #pageWrapper.toggled .sidebar-nav {
+        font-size: 1.2em;
+    }
+    
+    #pageWrapper.toggled .sidebar-nav .chevron-wrapper{
+        float: none !important;
+        margin-left: 2px;
+    }
+    
+    #pageWrapper.toggled .sidebar-nav li ul.subMenu>li>a {
+        padding-left: 15px;
+    }
+    
+    .headerNavText {
+        display: none !important;
+    }
+}
+
+/* Menu toggle auch bei Tablet */
+@media (max-width: 992px) {
+    #pageWrapper .navbar .navbar-header {
+        float: none !important;
+    }
+    #pageWrapper .navbar .navbar-toggle {
+        display: block !important;
+    }
+    #pageWrapper .navbar .navbar-collapse.collapse {
+        display: none !important;
+    }
+    #pageWrapper .navbar .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    #pageWrapper .navbar .navbar-nav {
+        float: none!important;
+        margin-right: -15px !important;
+        margin-left: -15px !important;
+    }
+    #pageWrapper .navbar .navbar-nav>li {
+        float: none !important;
+    }
+    
+    #pageWrapper .navbar-nav .list-group-item {
+        border-radius: 0px !important;
+        padding: 10px 15px !important;
+    }
+    
+    #menu-toggle {
+        display: none;
+    }
+    
+    .navbar-brand {
+        left: 0px;
+        position: absolute;
+    }
+}
+
+#navbar #account hr {
+    margin: 10px 0px !important;
+}
+
+.nav li ul.subMenu {
+    list-style: none; 
+    padding-left: 0px;
+}
+
+.nav li > .list-group-item {
+    padding: 8px 15px;
+    margin-bottom: -1px;
+    border-width: 0px;
+}
+
+.nav li:last-child .list-group-item {
+    margin-bottom: 0px;
+}
+
+.nav li ul.subMenu>li>a {
+    padding-left: 25px;
+}  
+
+.nav .sideBarText {
+    vertical-align: middle;
+}
+
+.navbar-header {
+    height: 60px;
+}
+
+.logoWrapper {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px 6px;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-top: 19px !important;
+        padding-bottom: 19px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    nav.navbar-fixed-top div.navbar-wrapper div.navbar-collapse {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        overflow: auto !important;
+    }
+}

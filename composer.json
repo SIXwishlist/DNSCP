@@ -1,0 +1,18 @@
+{
+    "name": "rnt-forest/dnscp",
+    "version": "0.1.0",
+    "description": "DNS Control Panel",
+    "license": "AGPL-3.0",
+    "require": {
+        "php": ">=7.0",
+        "ext-phalcon": ">=3.0",
+        "ext-gmp": "*",
+        "ext-curl": "*",
+        "ext-ssh2": "*",
+        "rnt-forest/core": "dev-develop",
+        "rnt-forest/dns": "dev-develop"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "1.6.*"
+    }
+}
